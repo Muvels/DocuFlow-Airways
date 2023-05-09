@@ -1,1 +1,5 @@
-./training/exported-models
+__pycache__
+*.pyc
+pre-trained-models
+archive
+training_demo/images/*
