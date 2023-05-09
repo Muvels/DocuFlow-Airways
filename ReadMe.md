@@ -13,7 +13,7 @@ Third, The Text in the Boxes the AI found will be extracted and given to the [LS
 
 After that the key value Pairs will be converted to JSON format and returned from the flask Server to the User.
 
-## Example Input File:
+## Example Input:
 
 You can see an Expamle Input File in the GoNetworks/pdfs directory
 
