@@ -2,4 +2,5 @@ __pycache__
 *.pyc
 pre-trained-models
 archive
-training_demo/images/*
+training_demo/images/**
+training_demo/models/**
