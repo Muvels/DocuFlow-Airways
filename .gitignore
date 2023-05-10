@@ -2,6 +2,6 @@ __pycache__
 *.pyc
 pre-trained-models
 archive
-training_demo/images/**
-training_demo/models/**
-training_demo/exported-models/**
+training/images/**
+training/models/**
+training/exported-models/**
