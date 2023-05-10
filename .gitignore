@@ -4,3 +4,4 @@ pre-trained-models
 archive
 training_demo/images/**
 training_demo/models/**
+training_demo/exported-models/**

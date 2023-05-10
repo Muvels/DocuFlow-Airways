@@ -1,0 +1,34 @@
+item {
+    id: 1
+    name: 'Shippers Details'
+}
+
+item {
+    id: 2
+    name: 'Not Negotiable'
+}
+
+item {
+    id: 3
+    name: 'Consignees Details'
+}
+
+item {
+    id: 4
+    name: 'Issuers Details'
+}
+
+item {
+    id: 5
+    name: 'Agreement'
+}
+
+item {
+    id: 6
+    name: 'Pieces(serial)'
+}
+
+item {
+    id: 7
+    name: 'Gross Weight(serial)'
+}
