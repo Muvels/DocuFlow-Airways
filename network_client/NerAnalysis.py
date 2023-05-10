@@ -1,5 +1,5 @@
 import pypdfium2 as pdfium
-from workspace.GoNetworks.utils import NerStringUtils
+from workspace.network_client.utils import NerStringUtils
 import json
 import pandas
 import tabula
@@ -44,7 +44,7 @@ def performNerAnalysis(EngineInstance, boxes, PATH_TO_PDF, categoryarr, im_width
                 except:
                     pass
             i = i + 1
-    with open('workspace/GoNetworks/output/AWB.json', 'w') as curr:
+    with open('workspace/network_client/output/AWB.json', 'w') as curr:
         json.dump(jsout, curr)
     
     return jsout

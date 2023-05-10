@@ -5,7 +5,7 @@ import warnings
 import time
 from object_detection.utils import label_map_util
 from object_detection.utils import visualization_utils as viz_utils
-from workspace.GoNetworks.NerAnalysis import performNerAnalysis
+from workspace.network_client.NerAnalysis import performNerAnalysis
 import fitz
 import tensorflow as tf
 
@@ -24,7 +24,7 @@ def loadModel(PATH_TO_SAVED_MODEL):
 
 def PerformAnalysis(detect_fn, EngineInstance):
 
-  PATH_TO_LABELS = "workspace/GoNetworks/annotations/label_map.pbtxt"
+  PATH_TO_LABELS = "workspace/network_client/annotations/label_map.pbtxt"
   PATH_TO_PDF = "uploaded_pdfs/current.pdf"
 
   im_width = 0
@@ -33,7 +33,7 @@ def PerformAnalysis(detect_fn, EngineInstance):
   with fitz.open(PATH_TO_PDF) as doc:
     page = doc.load_page(0)
     pix = page.get_pixmap()
-    output = "workspace/GoNetworks/images/20.png"
+    output = "workspace/network_client/images/20.png"
     pix.save(output)
 
 
@@ -61,7 +61,7 @@ def PerformAnalysis(detect_fn, EngineInstance):
       im.save(path)
       return (np.array(Image.open(path)), im.size[0], im.size[1])
 
-  IMAGE_PATHS = ['workspace/GoNetworks/images/20.png']
+  IMAGE_PATHS = ['workspace/network_client/images/20.png']
   for image_path in IMAGE_PATHS:
 
       print('Running inference for {}... '.format(image_path), end='')
@@ -115,11 +115,11 @@ def PerformAnalysis(detect_fn, EngineInstance):
       print('Done')
 
       plt.show()
-      plt.savefig("workspace/GoNetworks/images/res.png", dpi=500)
+      plt.savefig("workspace/network_client/images/res.png", dpi=500)
 
       return performNerAnalysis(EngineInstance, detections, PATH_TO_PDF, category_index, im_width, im_height)
 
   plt.show()
-  plt.savefig("workspace/GoNetworks/images/res.png", dpi=500)
+  plt.savefig("workspace/network_client/images/res.png", dpi=500)
 
   # sphinx_gallery_thumbnail_number = 2

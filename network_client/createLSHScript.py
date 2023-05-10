@@ -1,11 +1,11 @@
 from LSHEngine.ModelManager import LSHClientDB
 from LSHEngine import LSHEngine
 DB = LSHClientDB.Manager()
-DB.create_db(["C:/Users/Matteo/Desktop/DEVELOP/Current/DocFlow/workspace/GoNetworks/NERModel/raw.csv"])
+DB.create_db(["C:/Users/Matteo/Desktop/DEVELOP/Current/DocFlow/workspace/network_client/NERModel/raw.csv"])
 Instance = LSHEngine.Engine()
 Instance.GO()
 Instance.include_custom_manager(DB)
-Instance.save_model_to_bin("C:/Users/Matteo/Desktop/DEVELOP/Current/DocFlow/workspace/GoNetworks/NERModel/baseapp.bin")
+Instance.save_model_to_bin("C:/Users/Matteo/Desktop/DEVELOP/Current/DocFlow/workspace/network_client/NERModel/baseapp.bin")
 print("Saved Model")
 
 #Import Engine Class
@@ -15,7 +15,7 @@ print("Saved Model")
 #Start Engine
 #EngineInstance.GO()
 #Load Database into Engine
-#EngineInstance.load("workspace/GoNetworks/NERModel/baseapp.bin")
+#EngineInstance.load("workspace/network_client/NERModel/baseapp.bin")
 #EngineInstance.define_current_scope(["value"])
 #for i in range(1):
 #    i = 24

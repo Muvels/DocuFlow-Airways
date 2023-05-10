@@ -15,11 +15,11 @@ After that the key value Pairs will be converted to JSON format and returned fro
 
 ## Example Input:
 
-You can see an Expamle Input File in the GoNetworks/pdfs directory
+You can see an Expamle Input File in the network_client/pdfs directory
 
 ## Example Output:
 
-You can see an Expamle Output File in the GoNetworks/output directory
+You can see an Expamle Output File in the network_client/output directory
 
 
 
