@@ -9,7 +9,7 @@ First, the User sends an Http GET request to an running Flask Server, here the D
 
 Second, the AI scans the submittet Manifest and find Boxes where the Value for a specific Key is usually in it. Coordinates will be returned.
 
-Third, The Text in the Boxes the AI found will be extracted and given to the [LSHEngine Library](https://github.com/Muvels/LSHEngine), here the text gets compared to Thousands of other Data to detect Similarity in order to find a fitting key to each value. The compared values with the greatest overlap (measured by the Jaquard Value) are summarised as a key value pair.
+Third, the Text in the Boxes the AI found will be extracted and given to the [LSHEngine Library](https://github.com/Muvels/LSHEngine), here the text gets compared to Thousands of other Data to detect Similarity in order to find a fitting key to each value. The compared values with the greatest overlap (measured by the Jaquard Value) are summarised as a key value pair.
 
 After that the key value Pairs will be converted to JSON format and returned from the flask Server to the User.
 
