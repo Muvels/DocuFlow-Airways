@@ -5,7 +5,7 @@ The Task of Docuflow is to read Pdf Documents and to find specific Values that a
 
 ## How it works:
 
-First the User sends an Http GET request to an running Flask Server, here the Document gets submitted with MIME-Type Multipart-Form Data
+First, the User sends an Http GET request to an running Flask Server, here the Document gets submitted with MIME-Type Multipart-Form Data
 
 Second, the AI scans the submittet Manifest and find Boxes where the Value for a specific Key is usually in it Coordinates will be returned.
 
